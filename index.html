@@ -1,23 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Youssef El-Mesaly</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef El-Mesaly - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* --- General Styles --- */
+        :root {
+            --primary-color: #2E74B5; /* الأزرق الاحترافي ديال CV */
+            --secondary-color: #f4f4f4;
+            --text-color: #333;
+            --bg-color: #fff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        /* --- Header / Hero Section --- */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #fff;
+            font-size: 1.5em;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #ffd700;
+        }
+
+        /* --- Main Container --- */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        /* --- Sections --- */
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* --- Cards for Skills & Exp --- */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--secondary-color);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.1em;
+            color: #444;
+        }
+
+        .card i {
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2em; }
+        }
+    </style>
 </head>
-<body style="font-family: Arial; text-align:center; padding:40px;">
-  <h1>Youssef El-Mesaly</h1>
-  <p>Licence en Sciences Économiques et Gestion</p>
-  <p>Junior Consultant | Communication & Accompagnement</p>
+<body>
 
-  <hr style="margin:30px 0;">
+    <header>
+        <div class="header-content">
+            <h1>Youssef El-Mesaly</h1>
+            <p>Consultant Junior | Économie & Solutions Digitales</p>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:youssefelmesaly4@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
 
-  <h2>À propos de moi</h2>
-  <p>
-    Je suis diplômé en sciences économiques et gestion, intéressé par
-    l’accompagnement des jeunes, l’insertion professionnelle et le développement
-    des compétences.
-  </p>
+    <div class="container">
 
-  <h2>Contact</h2>
-  <p>Email : youssefelmesaly4@gmail.com</p>
-</body>
-</html>
+        <section id="about">
+            <h2><i class="fas fa-user"></i> À propos de moi</h2>
+            <p>
+                Jeune diplômé en <strong>Sciences Économiques et Gestion</strong>, je combine une formation académique solide avec des compétences techniques modernes. 
+                Passionné par l'accompagnement des projets et le développement digital, je cherche à apporter de la valeur ajoutée à travers l'analyse, la créativité et la maîtrise des outils numériques.
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2><i class="fas fa-briefcase"></i> Expériences & Parcours</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Haut Commissariat au Plan (HCP)</h3>
+                    <p><strong>Participation au Recensement (2024)</strong></p>
+                    <p>Gestion de terrain, collecte de données et interaction directe avec les ménages.</p>
+                </div>
+                <div class="card">
+                    <h3>ANAPEC / INDH</h3>
+                    <p><strong>Formation Soft Skills & Employabilité</strong></p>
+                    <p>Développement de compétences en communication, travail d'équipe et leadership.</p>
+                </div>
+            </div>
+        </
