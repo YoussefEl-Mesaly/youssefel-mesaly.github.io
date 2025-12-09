@@ -6,7 +6,7 @@
     <title>Youssef El-Mesaly | Portfolio</title>
     <style>
         :root {
-            --primary-color: #2E74B5; /* Blue from your CV */
+            --primary-color: #2E74B5;
             --secondary-color: #f4f4f4;
             --text-color: #333;
             --bg-color: #fff;
@@ -21,12 +21,23 @@
             background-color: var(--secondary-color);
         }
 
-        /* Header Section */
+        /* --- UPDATED HEADER WITH PHOTO --- */
         header {
             background-color: var(--primary-color);
             color: white;
-            padding: 60px 20px;
+            padding: 40px 20px;
             text-align: center;
+        }
+
+        /* Style for the Profile Image */
+        .profile-img {
+            width: 150px;       /* Size of the image */
+            height: 150px;
+            border-radius: 50%; /* Makes it a perfect circle */
+            border: 4px solid white; /* White border around the photo */
+            object-fit: cover;  /* Ensures the photo doesn't stretch */
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Soft shadow */
         }
 
         header h1 {
@@ -87,7 +98,7 @@
             color: #555;
         }
 
-        /* Experience & Education Items */
+        /* Timeline Items */
         .timeline-item {
             margin-bottom: 20px;
             padding-left: 15px;
@@ -140,6 +151,7 @@
         /* Responsive */
         @media (max-width: 600px) {
             header h1 { font-size: 2rem; }
+            .profile-img { width: 120px; height: 120px; } /* Smaller photo on mobile */
             .container { margin: 20px auto; }
         }
     </style>
@@ -147,6 +159,8 @@
 <body>
 
     <header>
+        <img src="profile.jpg" alt="Photo de Youssef El-Mesaly" class="profile-img">
+        
         <h1>Youssef El-Mesaly</h1>
         <p>Junior Consultant | Sciences Économiques & Gestion | Digital</p>
         <a href="mailto:youssefelmesaly4@gmail.com" class="contact-btn">Me Contacter</a>
@@ -159,7 +173,7 @@
             <p class="about-text">
                 Jeune diplômé en sciences économiques et gestion, sérieux et motivé. Doté d'un bon sens de communication et d'initiative. 
                 J'ai une capacité à travailler avec différents publics et un intérêt marqué pour le développement de projets, 
-                [cite_start]l'accompagnement des jeunes et le digital[cite: 3, 4, 5].
+                l'accompagnement des jeunes et le digital.
             </p>
         </section>
 
@@ -169,7 +183,7 @@
             <div class="timeline-item">
                 <h3>Participation au Recensement Général (RGPH)</h3>
                 <span>2024 | Haut Commissariat au Plan (HCP)</span>
-                [cite_start]<p>Participation active à la collecte de données sur le terrain dans le cadre du recensement national[cite: 12, 13].</p>
+                <p>Participation active à la collecte de données sur le terrain dans le cadre du recensement national.</p>
             </div>
 
             <div class="timeline-item">
@@ -177,7 +191,7 @@
                 <span>ANAPEC / INDH</span>
                 <ul>
                     <li>Sensibilisation, orientation et accompagnement du public.</li>
-                    [cite_start]<li>Organisation et participation à des activités collectives[cite: 14, 15, 16].</li>
+                    <li>Organisation et participation à des activités collectives.</li>
                 </ul>
             </div>
         </section>
@@ -188,13 +202,13 @@
             <div class="timeline-item">
                 <h3>Licence en Sciences Économiques et Gestion</h3>
                 <span>2022 | Université Sultan Moulay Slimane</span>
-                [cite_start]<p>Parcours Gestion[cite: 7, 8].</p>
+                <p>Parcours Gestion.</p>
             </div>
 
             <div class="timeline-item">
                 <h3>Baccalauréat SVT</h3>
                 <span>2018 | Lycée Qualifiant Al Atlas</span>
-                [cite_start]<p>Sciences de la Vie et de la Terre[cite: 9, 10].</p>
+                <p>Sciences de la Vie et de la Terre.</p>
             </div>
         </section>
 
@@ -221,8 +235,8 @@
         <section>
             <h2>Certifications</h2>
             <ul>
-                [cite_start]<li>Marketing Digital – LinkedIn Learning [cite: 26]</li>
-                [cite_start]<li>Google Analytics 4 – LinkedIn Learning [cite: 26]</li>
+                <li>Marketing Digital – LinkedIn Learning</li>
+                <li>Google Analytics 4 – LinkedIn Learning</li>
             </ul>
         </section>
 
