@@ -3,174 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youssef El-Mesaly - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+    <title>Youssef El-Mesaly | Portfolio</title>
     <style>
-        /* --- General Styles --- */
         :root {
-            --primary-color: #2E74B5; /* الأزرق الاحترافي ديال CV */
+            --primary-color: #2E74B5; /* Blue from your CV */
             --secondary-color: #f4f4f4;
             --text-color: #333;
             --bg-color: #fff;
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
             color: var(--text-color);
-            background-color: var(--bg-color);
+            line-height: 1.6;
+            background-color: var(--secondary-color);
         }
 
-        /* --- Header / Hero Section --- */
+        /* Header Section */
         header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: #fff;
+            background-color: var(--primary-color);
+            color: white;
             padding: 60px 20px;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5em;
-            letter-spacing: 1px;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         header p {
-            font-size: 1.2em;
-            margin-top: 10px;
+            font-size: 1.2rem;
             opacity: 0.9;
+            margin-top: 10px;
         }
 
-        .social-links {
+        .contact-btn {
+            display: inline-block;
             margin-top: 20px;
-        }
-
-        .social-links a {
-            color: #fff;
-            font-size: 1.5em;
-            margin: 0 10px;
+            padding: 10px 25px;
+            background-color: white;
+            color: var(--primary-color);
             text-decoration: none;
-            transition: color 0.3s;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: 0.3s;
         }
 
-        .social-links a:hover {
-            color: #ffd700;
+        .contact-btn:hover {
+            background-color: #ddd;
         }
 
-        /* --- Main Container --- */
+        /* Container */
         .container {
             max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
-        /* --- Sections --- */
+        /* Sections */
         section {
-            margin-bottom: 50px;
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         h2 {
             color: var(--primary-color);
-            border-bottom: 2px solid var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
             padding-bottom: 10px;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-
-        /* --- Cards for Skills & Exp --- */
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: var(--secondary-color);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card h3 {
             margin-top: 0;
-            font-size: 1.1em;
-            color: #444;
         }
 
-        .card i {
-            color: var(--primary-color);
-            margin-right: 10px;
+        /* About */
+        .about-text {
+            font-size: 1.1rem;
+            color: #555;
         }
 
-        ul {
-            list-style-type: none;
+        /* Experience & Education Items */
+        .timeline-item {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        .timeline-item h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .timeline-item span {
+            color: #777;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item ul {
+            margin: 5px 0 0 20px;
             padding: 0;
+            color: #555;
         }
 
-        ul li {
-            margin-bottom: 8px;
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
-        /* --- Footer --- */
+        .skill-tag {
+            background-color: #e3f2fd;
+            color: var(--primary-color);
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
         footer {
-            background: #333;
-            color: #fff;
             text-align: center;
             padding: 20px;
+            background-color: #333;
+            color: white;
             margin-top: 40px;
         }
 
-        /* --- Responsive --- */
+        /* Responsive */
         @media (max-width: 600px) {
-            header h1 { font-size: 2em; }
+            header h1 { font-size: 2rem; }
+            .container { margin: 20px auto; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="header-content">
-            <h1>Youssef El-Mesaly</h1>
-            <p>Consultant Junior | Économie & Solutions Digitales</p>
-            <div class="social-links">
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:youssefelmesaly4@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
+        <h1>Youssef El-Mesaly</h1>
+        <p>Junior Consultant | Sciences Économiques & Gestion | Digital</p>
+        <a href="mailto:youssefelmesaly4@gmail.com" class="contact-btn">Me Contacter</a>
     </header>
 
     <div class="container">
 
-        <section id="about">
-            <h2><i class="fas fa-user"></i> À propos de moi</h2>
-            <p>
-                Jeune diplômé en <strong>Sciences Économiques et Gestion</strong>, je combine une formation académique solide avec des compétences techniques modernes. 
-                Passionné par l'accompagnement des projets et le développement digital, je cherche à apporter de la valeur ajoutée à travers l'analyse, la créativité et la maîtrise des outils numériques.
+        <section>
+            <h2>À propos de moi</h2>
+            <p class="about-text">
+                Jeune diplômé en sciences économiques et gestion, sérieux et motivé. Doté d'un bon sens de communication et d'initiative. 
+                J'ai une capacité à travailler avec différents publics et un intérêt marqué pour le développement de projets, 
+                [cite_start]l'accompagnement des jeunes et le digital[cite: 3, 4, 5].
             </p>
         </section>
 
-        <section id="experience">
-            <h2><i class="fas fa-briefcase"></i> Expériences & Parcours</h2>
-            <div class="card-grid">
-                <div class="card">
-                    <h3>Haut Commissariat au Plan (HCP)</h3>
-                    <p><strong>Participation au Recensement (2024)</strong></p>
-                    <p>Gestion de terrain, collecte de données et interaction directe avec les ménages.</p>
-                </div>
-                <div class="card">
-                    <h3>ANAPEC / INDH</h3>
-                    <p><strong>Formation Soft Skills & Employabilité</strong></p>
-                    <p>Développement de compétences en communication, travail d'équipe et leadership.</p>
-                </div>
+        <section>
+            <h2>Expériences Professionnelles</h2>
+            
+            <div class="timeline-item">
+                <h3>Participation au Recensement Général (RGPH)</h3>
+                <span>2024 | Haut Commissariat au Plan (HCP)</span>
+                [cite_start]<p>Participation active à la collecte de données sur le terrain dans le cadre du recensement national[cite: 12, 13].</p>
             </div>
-        </
+
+            <div class="timeline-item">
+                <h3>Formation en Soft Skills et Employabilité</h3>
+                <span>ANAPEC / INDH</span>
+                <ul>
+                    <li>Sensibilisation, orientation et accompagnement du public.</li>
+                    [cite_start]<li>Organisation et participation à des activités collectives[cite: 14, 15, 16].</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Formation Académique</h2>
+            
+            <div class="timeline-item">
+                <h3>Licence en Sciences Économiques et Gestion</h3>
+                <span>2022 | Université Sultan Moulay Slimane</span>
+                [cite_start]<p>Parcours Gestion[cite: 7, 8].</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Baccalauréat SVT</h3>
+                <span>2018 | Lycée Qualifiant Al Atlas</span>
+                [cite_start]<p>Sciences de la Vie et de la Terre[cite: 9, 10].</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Compétences Techniques & Digitales</h2>
+            
+            <h3>Numérique & Design</h3>
+            <div class="skills-container">
+                <span class="skill-tag">Microsoft Office (Word, Excel, PPT)</span>
+                <span class="skill-tag">Adobe Photoshop</span>
+                <span class="skill-tag">Adobe Illustrator</span>
+                <span class="skill-tag">Canva</span>
+            </div>
+            <br>
+            <h3>Web & Digital</h3>
+            <div class="skills-container">
+                <span class="skill-tag">WordPress</span>
+                <span class="skill-tag">Shopify</span>
+                <span class="skill-tag">Marketing Digital</span>
+                <span class="skill-tag">Google Analytics 4</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                [cite_start]<li>Marketing Digital – LinkedIn Learning [cite: 26]</li>
+                [cite_start]<li>Google Analytics 4 – LinkedIn Learning [cite: 26]</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Youssef El-Mesaly. Tous droits réservés.</p>
+        <p>Zaouit Echeikh | youssefelmesaly4@gmail.com</p>
+    </footer>
+
+</body>
+</html>
