@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Youssef El-Mesaly</title>
+    <title>CV Digital - Youssef El-Mesaly</title>
     <style>
-        /* تنسيق عام للصفحة */
+        /* Design Général */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f7f6;
@@ -14,125 +14,95 @@
             padding: 0;
             line-height: 1.6;
         }
-
-        /* تنسيق الصندوق الوسطاني (Container) */
         .container {
             max-width: 800px;
             margin: 40px auto;
-            background: #fff;
+            background: white;
             padding: 40px;
-            border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
         }
 
-        /* الرأسية (Header) */
+        /* En-tête */
         header {
             text-align: center;
-            border-bottom: 2px solid #2E74B5; /* الأزرق ديالك */
+            border-bottom: 2px solid #3498db;
             padding-bottom: 20px;
             margin-bottom: 30px;
         }
-
-        /* الصورة الشخصية */
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 4px solid #fff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-
         h1 {
-            color: #2E74B5;
-            margin: 10px 0 5px;
-            font-size: 2.2em;
-            text-transform: uppercase;
+            color: #2c3e50;
+            margin: 0;
+            font-size: 2.5em;
         }
-
-        .title-role {
+        .subtitle {
+            color: #3498db;
             font-size: 1.2em;
-            color: #555;
             font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 10px;
         }
-
-        /* الأقسام (Sections) */
+        
+        /* Sections */
         h2 {
-            color: #2E74B5;
-            border-left: 5px solid #2E74B5;
+            color: #2c3e50;
+            border-left: 5px solid #3498db;
             padding-left: 10px;
             margin-top: 30px;
-            font-size: 1.4em;
         }
-
-        .section-content {
-            margin-left: 15px;
-        }
-
-        /* تفاصيل الخبرة والتعليم */
-        .job-item {
+        
+        /* Expériences */
+        .job {
             margin-bottom: 20px;
         }
-
         .job-title {
             font-weight: bold;
             font-size: 1.1em;
-            color: #333;
         }
-
         .job-date {
-            font-style: italic;
-            color: #777;
+            color: #7f8c8d;
             font-size: 0.9em;
-            display: block;
             margin-bottom: 5px;
         }
 
-        ul {
-            margin-top: 5px;
-            padding-left: 20px;
-        }
-
-        /* المهارات (Tags Style) */
-        .skills-wrapper {
+        /* Compétences (Badges) */
+        .skills-container {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
-
-        .skill-tag {
-            background-color: #e8f0fe;
-            color: #2E74B5;
+        .skill-badge {
+            background-color: #ecf0f1;
+            color: #2c3e50;
             padding: 5px 15px;
             border-radius: 20px;
             font-size: 0.9em;
-            font-weight: 600;
+            border: 1px solid #bdc3c7;
         }
 
-        /* معلومات الاتصال */
-        .contact-info {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            font-size: 0.9em;
-            color: #666;
-        }
-
-        .contact-info a {
-            color: #2E74B5;
+        /* Bouton Contact */
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
             text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
             font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #2980b9;
         }
 
-        /* التوافق مع الهاتف (Responsive) */
+        /* Mobile */
         @media (max-width: 600px) {
             .container {
-                margin: 10px;
+                margin: 20px;
                 padding: 20px;
             }
-            h1 { font-size: 1.8em; }
+            h1 { font-size: 2em; }
         }
     </style>
 </head>
@@ -141,97 +111,64 @@
     <div class="container">
         <header>
             <h1>Youssef El-Mesaly</h1>
-            <p class="title-role">Licence en Sciences Économiques | Junior Consultant</p>
-            <p>Zaouit Echeikh • Maroc</p>
+            <div class="subtitle">Candidat Master Marketing Digital & E-Business</div>
+            <p>E-Commerçant Freelance | Analyste Digital</p>
+            <a href="mailto:youssefelmesaly4@gmail.com" class="btn">Me Contacter</a>
         </header>
 
         <section>
-            <h2>À propos de moi</h2>
-            <div class="section-content">
-                <p>
-                    Jeune diplômé en Sciences Économiques et Gestion, sérieux et motivé. 
-                    Doté d'une expérience terrain (Recensement) et de solides compétences numériques. 
-                    Intéressé par l'accompagnement des jeunes, l'insertion professionnelle et le développement de projets digitaux.
-                </p>
+            <h2>À propos</h2>
+            <p>
+                Titulaire d'une Licence en Sciences Économiques et Gestion (2022), j'ai développé une <strong>activité freelance</strong> sur le marché américain (Amazon Merch) pour acquérir une expertise pratique du digital. Certifié en Google Analytics 4, je souhaite intégrer le Master MDEB pour structurer cette expérience par une vision stratégique.
+            </p>
+        </section>
+
+        <section>
+            <h2>Expériences Clés</h2>
+            
+            <div class="job">
+                <div class="job-title">Gestionnaire E-Commerce (Freelance) - Amazon Merch US</div>
+                <div class="job-date">2023 – Présent</div>
+                <ul>
+                    <li>Optimisation SEO (Mots-clés, Titres) pour l'algorithme Amazon.</li>
+                    <li>Analyse de données et détection de niches rentables (Trends & Evergreen).</li>
+                    <li>Gestion de la propriété intellectuelle (Copyright/Trademark).</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-title">Agent Recenseur - HCP</div>
+                <div class="job-date">Septembre 2024</div>
+                <ul>
+                    <li>Collecte de données numériques sur le terrain.</li>
+                    <li>Gestion autonome d'une zone géographique.</li>
+                </ul>
             </div>
         </section>
 
         <section>
-            <h2>Expériences & Activités</h2>
-            <div class="section-content">
-                
-                <div class="job-item">
-                    <span class="job-title">Participation au Recensement Général (RGPH)</span>
-                    <span class="job-date">2024 | Haut Commissariat au Plan (HCP)</span>
-                    <ul>
-                        <li>Collecte d'informations et communication directe avec les citoyens.</li>
-                        <li>Organisation du travail, respect des délais et saisie sur tablettes.</li>
-                    </ul>
-                </div>
-
-                <div class="job-item">
-                    <span class="job-title">Formation Soft Skills & Employabilité</span>
-                    <span class="job-date">2023 | AMAPPE / INDH (Plateforme des Jeunes)</span>
-                    <ul>
-                        <li>Développement de l'esprit d'initiative et travail en équipe.</li>
-                        <li>Techniques de recherche d'emploi et communication professionnelle.</li>
-                    </ul>
-                </div>
-
-                <div class="job-item">
-                    <span class="job-title">Action Associative & Bénévolat</span>
-                    <span class="job-date">Période COVID-19 & Ramadan</span>
-                    <ul>
-                        <li>Solidarité Sociale : Campagnes de sensibilisation et distribution de paniers.</li>
-                        <li>Animation Communautaire : Gestion de groupes d'entraide sur les réseaux sociaux.</li>
-                    </ul>
-                </div>
-
+            <h2>Compétences Techniques</h2>
+            <div class="skills-container">
+                <span class="skill-badge">SEO / Référencement</span>
+                <span class="skill-badge">Google Analytics 4</span>
+                <span class="skill-badge">Amazon Seller Central</span>
+                <span class="skill-badge">Print on Demand</span>
+                <span class="skill-badge">Adobe Photoshop / Canva</span>
             </div>
         </section>
 
         <section>
-            <h2>Formation</h2>
-            <div class="section-content">
-                <div class="job-item">
-                    <span class="job-title">Licence en Sciences Économiques et Gestion</span>
-                    <span class="job-date">2022 | Université Sultan Moulay Slimane, Béni Mellal</span>
-                </div>
-                <div class="job-item">
-                    <span class="job-title">Baccalauréat SVT</span>
-                    <span class="job-date">2018 | Lycée Al Atlas, Zaouit Echeikh</span>
-                </div>
-            </div>
+            <h2>Certificats & Formation</h2>
+            <ul>
+                <li><strong>Licence Économie & Gestion</strong> - USMS Béni Mellal (2022)</li>
+                <li><strong>Google Analytics 4 Essential Training</strong> - LinkedIn Learning (2021)</li>
+                <li><strong>Digital Marketing Foundations</strong> - LinkedIn Learning (2021)</li>
+            </ul>
         </section>
 
-        <section>
-            <h2>Compétences</h2>
-            <div class="section-content">
-                <p><strong>Numérique & Digital :</strong></p>
-                <div class="skills-wrapper">
-                    <span class="skill-tag">Microsoft Office (Word, Excel)</span>
-                    <span class="skill-tag">Shopify (Gestion Boutique)</span>
-                    <span class="skill-tag">WordPress</span>
-                    <span class="skill-tag">Canva & Design</span>
-                    <span class="skill-tag">Google Analytics 4</span>
-                </div>
-
-                <br>
-                <p><strong>Soft Skills :</strong></p>
-                <div class="skills-wrapper">
-                    <span class="skill-tag">Communication</span>
-                    <span class="skill-tag">Travail en équipe</span>
-                    <span class="skill-tag">Esprit d'initiative</span>
-                    <span class="skill-tag">Organisation</span>
-                </div>
-            </div>
-        </section>
-
-        <div class="contact-info">
-            <p>Email : <a href="mailto:youssefelmesaly4@gmail.com">youssefelmesaly4@gmail.com</a></p>
-            <p>Tél : +212 6 13 29 77 34</p>
-            <p>© 2025 Youssef El-Mesaly</p>
-        </div>
+        <footer style="text-align: center; margin-top: 40px; font-size: 0.8em; color: #999;">
+            <p>&copy; 2025 Youssef El-Mesaly - Profil Digital</p>
+        </footer>
     </div>
 
 </body>
