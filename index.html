@@ -1,276 +1,30 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youssef El-Mesaly | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            /* ألوان ANAPEC المستخرجة من اللوجو */
-            --primary: #7A1F75; /* الموف ديال لانابيك */
-            --accent: #FDB913;  /* الأصفر/البرتقالي ديال اللوجو */
-            --dark: #333;
-            --light: #f9f9f9;
-            --white: #fff;
-        }
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=300&section=header&text=Hello%20World!&fontSize=90&animation=fadeIn&fontAlignY=38&desc=I%20am%20Youssef%20El-Mesaly&descAlignY=51&descAlign=62" width="100%"/>
+</div>
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: var(--dark);
-            background-color: var(--light);
-        }
+<h1 align="center">Hi there, I'm Youssef 👋</h1>
+<h3 align="center">Auto-Entrepreneur | POD Specialist | Digital Asset Builder</h3>
 
-        /* --- Hero Section (الواجهة) --- */
-        .hero {
-            /* تدرج لوني بالموف ديال أنابيك */
-            background: linear-gradient(135deg, var(--primary), #5a1255);
-            color: var(--white);
-            padding: 80px 20px;
-            text-align: center;
-            border-bottom: 5px solid var(--accent); /* خط أصفر لتحت */
-        }
+<div align="center">
+  <a href="mailto:your-email@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
+  </a>
+  <a href="https://www.linkedin.com/in/your-linkedin">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+</div>
 
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+---
 
-        .hero p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto 30px;
-        }
+### 🚀 About Me
 
-        .btn {
-            display: inline-block;
-            background: var(--accent); /* الزر باللون الأصفر باش يثير الانتباه */
-            color: #333; /* الكتابة كحلة باش تبان فوق الصفر */
-            padding: 10px 30px;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: bold;
-            transition: 0.3s;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
+I am a Morocco-based **Graphic Designer** and **E-commerce Entrepreneur** specializing in Print-on-Demand (POD) and Digital Products. 
 
-        .btn:hover {
-            transform: translateY(-2px);
-            background: #e6a800;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-        }
+My journey isn't just about pixel-perfect designs; it's about understanding **Market Psychology**, mastering **SEO**, and building sustainable **Passive Income** streams. I moved from Tier 10 to **Tier 2000** on Amazon Merch by focusing on quality and data-driven decisions, not just luck.
 
-        /* --- Container --- */
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
+Currently, I'm expanding my digital footprint beyond marketplaces to build a direct-to-consumer brand, while actively investing in the **Casablanca Stock Exchange** to secure my financial future.
 
-        section {
-            margin-bottom: 60px;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 40px;
-            color: var(--primary); /* العناوين بالموف */
-            text-transform: uppercase;
-            font-size: 1.8rem;
-            position: relative;
-        }
-        
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 3px;
-            background: var(--accent); /* الخط تحت العنوان بالأصفر */
-            margin: 10px auto;
-        }
-
-        /* --- Cards (الخدمات) --- */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: var(--white);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            text-align: center;
-            transition: 0.3s;
-            border-top: 4px solid transparent;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-top: 4px solid var(--accent); /* فاش تحط لاصوري كيطلع خط أصفر */
-        }
-
-        .icon-box {
-            font-size: 2.5rem;
-            color: var(--primary); /* الأيقونات بالموف */
-            margin-bottom: 20px;
-        }
-
-        .card h3 {
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-            color: var(--primary);
-        }
-
-        /* --- Experience Timeline --- */
-        .timeline-item {
-            background: var(--white);
-            border-left: 4px solid var(--primary); /* الخط الجانبي بالموف */
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-
-        .timeline-date {
-            font-weight: bold;
-            color: var(--accent); /* التاريخ بالأصفر/البرتقالي */
-            font-size: 0.9rem;
-            display: block;
-            margin-bottom: 5px;
-            text-shadow: 0px 0px 1px rgba(0,0,0,0.1); /* باش يبان واضح */
-        }
-
-        .timeline-item h3 {
-            margin: 0 0 5px;
-            color: var(--primary);
-        }
-
-        /* --- Skills Tags --- */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .skill-tag {
-            background: #f3e5f5; /* خلفية موف باهتة جداً */
-            color: var(--primary);
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            border: 1px solid #e1bee7;
-        }
-
-        /* --- Footer --- */
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            background: var(--primary); /* الفوتر بالموف */
-            color: var(--white);
-            margin-top: 50px;
-            border-top: 5px solid var(--accent);
-        }
-
-        footer a {
-            color: var(--accent);
-            margin: 0 10px;
-            font-size: 1.5rem;
-            text-decoration: none;
-        }
-
-        @media (max-width: 600px) {
-            .hero h1 { font-size: 1.8rem; }
-        }
-    </style>
-</head>
-<body>
-
-    <div class="hero">
-        <h1>Youssef El-Mesaly</h1>
-        <p>Animateur d'Espace & Conseiller Junior en Insertion Professionnelle</p>
-        <p style="font-size: 0.9rem; margin-top: -15px;">Licencié en Économie | Passionné par le Digital</p>
-        <a href="mailto:youssefelmesaly4@gmail.com" class="btn">
-            <i class="fas fa-envelope"></i> Me Contacter
-        </a>
-    </div>
-
-    <div class="container">
-
-        <section>
-            <h2 class="section-title">Ce que j'apporte à l'Agence</h2>
-            <div class="services-grid">
-                <div class="card">
-                    <div class="icon-box"><i class="fas fa-users"></i></div>
-                    <h3>Accueil & Orientation</h3>
-                    <p>Accueillir les chercheurs d'emploi, identifier leurs besoins et les orienter efficacement vers les services adéquats.</p>
-                </div>
-                <div class="card">
-                    <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Accompagnement Digital</h3>
-                    <p>Assistance technique pour l'inscription sur le portail, la création de CV numériques et l'utilisation des outils en ligne.</p>
-                </div>
-                <div class="card">
-                    <div class="icon-box"><i class="fas fa-chalkboard-teacher"></i></div>
-                    <h3>Animation d'Ateliers</h3>
-                    <p>Animation d'espaces de recherche d'emploi et soutien aux démarches administratives des candidats.</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2 class="section-title">Mon Parcours</h2>
-            
-            <div class="timeline-item">
-                <span class="timeline-date">Actuellement</span>
-                <h3>Stagiaire - Animateur d'Espace</h3>
-                <p><strong>Agence ANAPEC</strong></p>
-                <p>Immersion professionnelle, assistance à l'accueil et découverte des processus d'accompagnement.</p>
-            </div>
-
-            <div class="timeline-item">
-                <span class="timeline-date">2024</span>
-                <h3>Agent Recenseur (HCP)</h3>
-                <p><strong>Recensement Général de la Population</strong></p>
-                <p>Expérience terrain intensive : gestion de zone, collecte de données sur tablettes et communication directe avec les citoyens.</p>
-            </div>
-
-            <div class="timeline-item">
-                <span class="timeline-date">2023</span>
-                <h3>Formation Soft Skills & Employabilité</h3>
-                <p><strong>AMAPPE / INDH (Plateforme des Jeunes)</strong></p>
-                <p>Renforcement des compétences comportementales : communication, travail d'équipe et esprit d'initiative.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2 class="section-title">Outils & Compétences</h2>
-            <div class="skills-container">
-                <span class="skill-tag"><i class="fas fa-file-word"></i> Microsoft Office</span>
-                <span class="skill-tag"><i class="fas fa-globe"></i> Inscription en ligne</span>
-                <span class="skill-tag"><i class="fas fa-search"></i> Techniques de Recherche d'Emploi</span>
-                <span class="skill-tag"><i class="fas fa-comments"></i> Communication Orale</span>
-                <span class="skill-tag"><i class="fab fa-shopify"></i> Gestion Web (Shopify/Canva)</span>
-            </div>
-        </section>
-
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Youssef El-Mesaly - Portfolio Professionnel</p>
-        <p>Zaouit Echeikh | Maroc</p>
-        <div style="margin-top: 15px;">
-            <a href="mailto:youssefelmesaly4@gmail.com"><i class="fas fa-envelope"></i></a>
-        </div>
-    </footer>
-
-</body>
-</html>
+- 🔭 **I’m currently working on:** Scaling my Etsy shop using an LLC structure & Digital Downloads.
+- 🌱 **I’m currently learning:** Advanced Facebook Ads strategies & Direct Response Copywriting.
+- 💼 **Business Model:** Amazon Merch On Demand (Tier 2000) + Etsy + KDP.
+- 🎯 **2026 Goal:** Diversifying income sources to achieve 100% location
